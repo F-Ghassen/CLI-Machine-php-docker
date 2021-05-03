@@ -9,14 +9,14 @@ System requirements:
 ### locally
 composer install 
 php bin/console purchase-cigarettes 2 10.00
-# to run tests: 
+#### to run tests: 
 cd vendor/bin
 phpunit ../../tests
 
 ### Docker
 docker build -t limango . 
 docker run -it limango php bin/console purchase-cigarettes 2 10.00
-# to run tests: 
+#### to run tests: 
 docker run -it limango ./vendor/bin/phpunit /app/tests
 
 ### Example:

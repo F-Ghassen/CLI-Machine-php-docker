@@ -7,14 +7,14 @@ System requirements:
 - Composer
 
 ### locally
-composer install 
+composer install <br>
 php bin/console purchase-cigarettes 2 10.00
 #### to run tests: 
-cd vendor/bin
+cd vendor/bin <br>
 phpunit ../../tests
 
 ### Docker
-docker build -t limango . 
+docker build -t limango . <br>
 docker run -it limango php bin/console purchase-cigarettes 2 10.00
 #### to run tests: 
 docker run -it limango ./vendor/bin/phpunit /app/tests
